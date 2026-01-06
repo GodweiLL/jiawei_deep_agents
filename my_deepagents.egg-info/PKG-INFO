@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: my-deepagents
+Version: 0.1.0
+Summary: 通过复刻 DeepAgents 学习 LangChain 与 LangGraph
+Requires-Python: <4.0,>=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: langchain<2.0.0,>=1.1.0
+Requires-Dist: langchain-core<2.0.0,>=1.2.5
+Requires-Dist: langchain-anthropic<2.0.0,>=1.2.0
+Requires-Dist: langgraph>=0.4.0
+Requires-Dist: wcmatch
+
+# My DeepAgents
+
+通过复刻 DeepAgents 框架学习 LangChain 与 LangGraph。

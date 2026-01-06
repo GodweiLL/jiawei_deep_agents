@@ -1,0 +1,35 @@
+[project]
+name = "my-deepagents"
+version = "0.1.0"
+description = "通过复刻 DeepAgents 学习 LangChain 与 LangGraph"
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "langchain>=1.1.0,<2.0.0",
+    "langchain-core>=1.2.5,<2.0.0",
+    "langchain-anthropic>=1.2.0,<2.0.0",
+    "langgraph>=0.4.0",
+    "wcmatch",
+]
+
+[dependency-groups]
+test = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=1.3.0",
+    "pytest-cov",
+]
+
+dev = [
+    "langchain-openai",
+]
+
+[build-system]
+requires = ["setuptools>=73.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
