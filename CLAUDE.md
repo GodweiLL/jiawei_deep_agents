@@ -7,3 +7,4 @@
 7.目录结构预期与deepagents保持一致,防止遗漏功能
 8.在写这个项目的时候,你有模型的key:sk-xxxxx(先以此占位,后续我会添加真正的key),与url:https://bmc-llm-relay.bluemediagroup.cn,以上是第三方中转的api,使用的是openai模式。
 9.核心代码让我手敲,无意义的部分,例如init,你直接生成即可。
+10.分阶段进行教学,教学完一个阶段,记得更新计划以及提醒我提交git。
