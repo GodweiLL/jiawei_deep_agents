@@ -11,7 +11,7 @@ from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Any, Literal, NotRequired, TypeAlias
 
-from langgraph.types import ToolRuntime
+from langchain.tools import ToolRuntime
 from typing_extensions import TypedDict
 
 # 标准的文件操作错误码
@@ -75,7 +75,7 @@ class EditResult:
     occurrences: int | None = None # 替换次数
 
 class BackendProtocol(abc.ABC):
-    f"""后端协议抽象基类
+    """后端协议抽象基类
 
     所有后端实现都必须继承此类并实现相应方法。
     文件数据结构:
